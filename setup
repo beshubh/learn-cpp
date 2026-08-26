@@ -1,0 +1,38 @@
+ostream& operator<<(ostream& os, const Trail& t) {
+    os << "Trail {\n"
+       << "  Name: " << t.name << "\n"
+       << "  Distance: " << t.distance << "\n"
+       << "  Has waterfall: " << (t.hasWaterfall ? "true" : "false") << "\n"
+       << "}\n";
+    return os;
+}
+
+vector<Trail> getTrails() {
+    return {
+        { "Stanford Dish Loop Trail", 3.7, false },
+        { "Arastradero Creek and Acorn Trail Loop", 2.6, false },
+        { "Los Trancos, Trappers Fire Road, and Steep Hollow Loop", 4.1, false },
+        { "North Bayfront Loop", 5.3, false },
+        { "Byxbee Art Hill", 3.2, false },
+        { "Windy Hill Loop", 6.5, false },
+        { "Hawk Ridge, Alder Spring, Charquin, Ancient Oaks, and Bo Gimbal Loop", 4.1, false },
+        { "Sunny Jim and IPIWA Loop", 2.9, false },
+        { "Stevens Creek Nature Trail Loop", 2.8, false },
+        { "PG&E, Wildcat and Coyote Trail Loop", 4.2, false },
+        { "Long Ridge Loop", 4.2, false },
+        { "Seven Springs Loop", 2.8, false },
+        { "Zinfandel Trail to Lookout Trail and Vista Loop to Maisie's Peak", 7.7, false },
+        { "Edgewood Trail Loop", 3.3, false },
+        { "Alambique Trail to Skyline Trail Loop", 4.8, false },
+        { "Crystal Springs and Campground Trail", 3.1, false },
+        { "Sanborn Trail", 3.5, false },
+        { "John S Brooks Memorial Trail Loop", 5.6, false },
+        { "Crazy Pete’s and Alpine Road Loop", 2.8, true },
+        { "Coal Road Loop", 2.1, true },
+        { "Bridle Trail and Martin Creek Loop", 2.4, true },
+        { "Oljon Trail via Sierra Morena Trail", 4.1, true },
+        { "Purisima Creek Trail to Craig Britton Trail", 3.8, true },
+        { "Ewing Hill Loop", 4.9, true },
+        { "Castle Rock Falls from Castle Rock Parking", 1.2, true }
+    };
+}   
